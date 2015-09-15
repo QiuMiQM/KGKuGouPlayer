@@ -17,6 +17,37 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    //1.取得本app的版本号
+    NSDictionary *infoDict = [NSBundle mainBundle].infoDictionary;
+    NSString *newVersion = infoDict[@"CFBundleVersion"];
+    //2.和之前保存的app版本号进行对比，如果相同，则从主页启动，反之则从欢迎页启动
+    NSString *oldVersion = [[NSUserDefaults standardUserDefaults] objectForKey:@"CFBundleVersion"];
+    if (oldVersion == nil)
+    {
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        KGWelcomePageViewController *welcomeVC = [storyboard instantiateViewControllerWithIdentifier:@"welcomePage"];
+        self.window.rootViewController = welcomeVC;
+    }
+    else
+    {
+        if ([oldVersion isEqualToString:newVersion])
+        {
+            //从主页启动
+            UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+            KGMainPageViewController *mainVC = [storyboard instantiateViewControllerWithIdentifier:@"mainPage"];
+            self.window.rootViewController = mainVC;
+        }
+        else
+        {
+            //从欢迎页启动
+            UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+            KGWelcomePageViewController *welcomeVC = [storyboard instantiateViewControllerWithIdentifier:@"welcomePage"];
+            self.window.rootViewController = welcomeVC;
+        }
+    }
+    //3.如果不同，更新版本号，保存新版本
+    [[NSUserDefaults standardUserDefaults]setObject:newVersion forKey:@"CFBundleVersion"];
     return YES;
 }
 
