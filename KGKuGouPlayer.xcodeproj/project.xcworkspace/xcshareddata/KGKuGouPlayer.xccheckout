@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5BC24123-3101-49D0-B004-C331A44B6171</string>
+	<key>IDESourceControlProjectName</key>
+	<string>KGKuGouPlayer</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>ACC9F21ED1F9F6EEBDEA82A36BF63AD8CBCBAB0F</key>
+		<string>https://github.com/QiuMiQM/KGKuGouPlayer.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>KGKuGouPlayer.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>ACC9F21ED1F9F6EEBDEA82A36BF63AD8CBCBAB0F</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/QiuMiQM/KGKuGouPlayer.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>ACC9F21ED1F9F6EEBDEA82A36BF63AD8CBCBAB0F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>ACC9F21ED1F9F6EEBDEA82A36BF63AD8CBCBAB0F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>KGKuGouPlayer</string>
+		</dict>
+	</array>
+</dict>
+</plist>
