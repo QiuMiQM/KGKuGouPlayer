@@ -35,7 +35,7 @@
         {
             //从主页启动
             UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-            KGMainPageViewController *mainVC = [storyboard instantiateViewControllerWithIdentifier:@"mainPage"];
+            KGMainPageViewController *mainVC = [storyboard instantiateViewControllerWithIdentifier:@"navMainPage"];
             self.window.rootViewController = mainVC;
         }
         else
@@ -48,6 +48,8 @@
     }
     //3.如果不同，更新版本号，保存新版本
     [[NSUserDefaults standardUserDefaults]setObject:newVersion forKey:@"CFBundleVersion"];
+    KGPlayBar *playBar = [KGPlayBar playBar];
+    playBar.progress.progress = 0.0;
     return YES;
 }
 

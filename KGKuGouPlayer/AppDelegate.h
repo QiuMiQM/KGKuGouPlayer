@@ -10,6 +10,7 @@
 #import <CoreData/CoreData.h>
 #import "KGWelcomePageViewController.h"
 #import "KGMainPageViewController.h"
+#import "KGPlayBar.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

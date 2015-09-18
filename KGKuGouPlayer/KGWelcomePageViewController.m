@@ -82,7 +82,7 @@
 {
     //切换到主页--将主页设置为window的rootViewController，这样就不会再回到欢迎页
     UIStoryboard *storyboard=[UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    UIViewController *mainPageViewController=[storyboard instantiateViewControllerWithIdentifier:@"mainPage"];
+    UIViewController *mainPageViewController=[storyboard instantiateViewControllerWithIdentifier:@"navMainPage"];
     //self.view.window.rootViewController=mainPageViewController;
     //不再AppDelegate内，需要使用单例来取window
     [UIApplication sharedApplication].keyWindow.rootViewController=mainPageViewController;
