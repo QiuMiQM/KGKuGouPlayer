@@ -10,7 +10,7 @@
 
 @interface KGLocalMusicTableViewController ()
 
-@property (strong, nonatomic) NSMutableArray *musicList;
+@property (strong, nonatomic) NSArray *musicList;
 @property (strong, nonatomic) AVAudioPlayer *audioPlayer;
 @property (assign, nonatomic) NSInteger musicRow;
 @property (strong, nonatomic) NSTimer *oldTimer;
@@ -21,19 +21,14 @@
 
 @implementation KGLocalMusicTableViewController
 
-- (NSMutableArray *)musicList
+#pragma mark 懒加载
+- (NSArray *)musicList
 {
     if (_musicList == nil)
     {
-        _musicList = [NSMutableArray array];
-        NSArray *dictList = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"LocolMusicList.plist" ofType:nil]];
-        for (int i = 0; i < dictList.count; i++)
-        {
-            NSDictionary *dict = dictList[i];
-            Music *music = [Music musicWithDict:dict];
-            [_musicList addObject:music];
-        }
+        _musicList = [CoreDataMngTool serachMusics];
     }
+    NSLog(@"%li",[CoreDataMngTool serachMusics].count);
     return _musicList;
 }
 
@@ -44,11 +39,7 @@
     _musicRow = -1;
     self.tableView.contentInset = UIEdgeInsetsMake(0, 0, 54.f, 0);
     _nowPlayTime = 0;
-}
-
-- (void)viewWillDisappear:(BOOL)animated
-{
-    [super viewWillDisappear:animated];
+    //self.tableView.rowHeight = 44.f+65.f;
 }
 
 - (void)didReceiveMemoryWarning
@@ -57,7 +48,6 @@
 }
 
 #pragma mark - Table view data source
-
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return 1;
@@ -68,15 +58,36 @@
     return self.musicList.count;
 }
 
+#pragma mark 自定义cell
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"localMusicCell" forIndexPath:indexPath];
-    
-    Music *music = self.musicList[indexPath.row];
-    cell.textLabel.text = music.name;
+    //UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"localMusicCell" forIndexPath:indexPath];
+    KGMusicTableViewCell *cell = [KGMusicTableViewCell musicTableViewCellWith:tableView];
+    cell.music = self.musicList[indexPath.row];
+    cell.delegate = self;
+//    Music *music = self.musicList[indexPath.row];
+//    cell.textLabel.text = music.name;
     return cell;
 }
 
+#pragma mark 播放/暂停功能的代理方法
+- (void)musicTableViewCell:(KGMusicTableViewCell *)cell didShowOrHiddenMenu:(BOOL)show
+{
+    NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
+    Music *music = self.musicList[indexPath.row];
+    music.cellStatus = !show;
+    
+    [self.tableView reloadData];
+}
+
+#pragma mark cell的高度
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    Music *music = self.musicList[indexPath.row];
+    return music.cellStatus ? 44.f : 109.f;
+}
+
+#pragma mark 单击某一行的cell
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     Music *music = self.musicList[indexPath.row];
@@ -122,6 +133,7 @@
     _musicRow = indexPath.row;
 }
 
+#pragma mark 进度条的更新
 - (void)updateProgress:(NSTimer *)timer
 {
     if ([_audioPlayer isPlaying])
@@ -145,6 +157,7 @@
     }
 }
 
+#pragma mark 自动切换下一曲的代理方法
 - (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag
 {
     if (_musicRow == self.musicList.count - 1)
@@ -194,6 +207,7 @@
     [self.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:_musicRow inSection:0] animated:YES scrollPosition:UITableViewScrollPositionMiddle];
 }
 
+#pragma mark 播放/暂停的代理方法
 - (void)playBar:(KGPlayBar *)playBar didPlayPauseMusic:(BOOL)playMethod
 {
     if (playMethod)
@@ -206,10 +220,42 @@
     }
 }
 
+#pragma mark 监听xib被点击的代理方法
 - (void)playBarDidPlayPauseMusic:(KGPlayBar *)playBar
 {
     //直接调用一首歌曲播放完毕切换下一首的代理方法实现
     [self audioPlayerDidFinishPlaying:_audioPlayer successfully:YES];
 }
 
+#pragma mark 监听下载等按钮的代理方法
+-(void)musicTableViewCell:(KGMusicTableViewCell *)cell didButtonClick:(NSString *)title
+{
+    NSLog(@"%@",title);
+    Music *music = self.musicList[[self.tableView indexPathForCell:cell].row];
+    UIActionSheet *actionSheet = [[UIActionSheet alloc]initWithTitle:[NSString stringWithFormat:@"添加%@到:",music.name] delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"我喜欢", @"我的收藏", nil];
+    [actionSheet showInView:self.view];
+}
+
+#pragma mark UIActionSheet的代理方法
+-(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    NSLog(@"%li",buttonIndex);
+    switch (buttonIndex)
+    {
+        case 0: //我喜欢
+        {
+        }
+            break;
+        case 1: //收藏
+        {
+        }
+            break;
+        case 2: //取消
+        {
+        }
+            break;
+        default:
+            break;
+    }
+}
 @end

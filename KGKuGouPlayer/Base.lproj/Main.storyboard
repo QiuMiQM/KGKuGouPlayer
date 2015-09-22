@@ -200,9 +200,11 @@
                                     <constraint firstAttribute="width" constant="47" id="5eV-oM-mOo"/>
                                     <constraint firstAttribute="height" constant="20" id="8Qp-Gt-tkl"/>
                                 </constraints>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <state key="normal" backgroundImage="NavView_onlineImage">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="selected" backgroundImage="NavView_offlineImage"/>
                                 <connections>
                                     <action selector="musicSwitch:" destination="S6x-mD-InC" eventType="touchUpInside" id="Qyg-J5-eJR"/>
                                 </connections>
@@ -280,7 +282,7 @@
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zM4-dR-SsC">
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -301,6 +303,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="NavView_offlineImage" width="47" height="20"/>
         <image name="NavView_onlineImage" width="47" height="20"/>
         <image name="leftViewBg" width="320" height="480"/>
         <image name="leftView_selected_image" width="4" height="78"/>

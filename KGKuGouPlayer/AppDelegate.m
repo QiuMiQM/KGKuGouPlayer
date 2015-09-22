@@ -18,6 +18,21 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    //搜索本地歌曲
+    //1.去数据库coredata中查询所有歌曲，如果有，不需要全盘加载，如果coredata是空的，则进行全盘歌曲的搜索，并保存在coredata中
+    NSArray *musicList = [CoreDataMngTool serachMusics];
+    if (musicList.count == 0||musicList == nil)
+    {
+        musicList = [NSMutableArray array];
+        NSArray *dictList = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"LocolMusicList.plist" ofType:nil]];
+        for (int i = 0; i < dictList.count; i++)
+        {
+            NSDictionary *dict = dictList[i];
+            //创建歌曲模型，但是不需要它的返回值，直接保存在数据库coredata当中
+            [Music musicWithDict:dict];
+        }
+    }
+    
     //1.取得本app的版本号
     NSDictionary *infoDict = [NSBundle mainBundle].infoDictionary;
     NSString *newVersion = infoDict[@"CFBundleVersion"];
@@ -50,6 +65,9 @@
     [[NSUserDefaults standardUserDefaults]setObject:newVersion forKey:@"CFBundleVersion"];
     KGPlayBar *playBar = [KGPlayBar playBar];
     playBar.progress.progress = 0.0;
+    
+    //清理沙盒中的数据
+    NSLog(@"%@",[self applicationDocumentsDirectory]);
     return YES;
 }
 

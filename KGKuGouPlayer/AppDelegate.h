@@ -11,6 +11,7 @@
 #import "KGWelcomePageViewController.h"
 #import "KGMainPageViewController.h"
 #import "KGPlayBar.h"
+#import "CoreDataMngTool.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

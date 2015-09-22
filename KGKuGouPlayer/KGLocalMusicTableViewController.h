@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 #import "KGPlayBar.h"
+#import "KGMusicTableViewCell.h"
+#import "CoreDataMngTool.h"
 
-@interface KGLocalMusicTableViewController : UITableViewController<AVAudioPlayerDelegate,KGPlayBarDelegate>
+@interface KGLocalMusicTableViewController : UITableViewController<AVAudioPlayerDelegate,KGPlayBarDelegate,KGMusicTableViewCellDelegate,UIActionSheetDelegate>
 
 @end

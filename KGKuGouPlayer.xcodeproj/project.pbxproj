@@ -18,6 +18,10 @@
 		C785572D1BAA8F7800F929AD /* MoreList.plist in Resources */ = {isa = PBXBuildFile; fileRef = C785572A1BAA8F7800F929AD /* MoreList.plist */; };
 		C785572E1BAA8F7800F929AD /* MyMusicSelList.plist in Resources */ = {isa = PBXBuildFile; fileRef = C785572B1BAA8F7800F929AD /* MyMusicSelList.plist */; };
 		C785572F1BAA8F7800F929AD /* webMusicList.plist in Resources */ = {isa = PBXBuildFile; fileRef = C785572C1BAA8F7800F929AD /* webMusicList.plist */; };
+		C78C75A21BB0E8900019C49A /* NEUButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C78C75A11BB0E8900019C49A /* NEUButton.m */; };
+		C78C75A51BB0FED20019C49A /* CoreDataMngTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C78C75A41BB0FED20019C49A /* CoreDataMngTool.m */; };
+		C7C6C22F1BAF93CA002F4E19 /* KGMusicTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C6C22E1BAF93CA002F4E19 /* KGMusicTableViewCell.m */; };
+		C7C6C2331BAFB301002F4E19 /* KGMusicMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C6C2321BAFB301002F4E19 /* KGMusicMenu.m */; };
 		C7E3ABD21BA7B1B700860734 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E3ABD11BA7B1B700860734 /* main.m */; };
 		C7E3ABD51BA7B1B700860734 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E3ABD41BA7B1B700860734 /* AppDelegate.m */; };
 		C7E3ABD81BA7B1B700860734 /* KGKuGouPlayer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C7E3ABD61BA7B1B700860734 /* KGKuGouPlayer.xcdatamodeld */; };
@@ -78,6 +82,14 @@
 		C785572A1BAA8F7800F929AD /* MoreList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MoreList.plist; sourceTree = "<group>"; };
 		C785572B1BAA8F7800F929AD /* MyMusicSelList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MyMusicSelList.plist; sourceTree = "<group>"; };
 		C785572C1BAA8F7800F929AD /* webMusicList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = webMusicList.plist; sourceTree = "<group>"; };
+		C78C75A01BB0E8900019C49A /* NEUButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEUButton.h; sourceTree = "<group>"; };
+		C78C75A11BB0E8900019C49A /* NEUButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEUButton.m; sourceTree = "<group>"; };
+		C78C75A31BB0FED20019C49A /* CoreDataMngTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataMngTool.h; sourceTree = "<group>"; };
+		C78C75A41BB0FED20019C49A /* CoreDataMngTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataMngTool.m; sourceTree = "<group>"; };
+		C7C6C22D1BAF93CA002F4E19 /* KGMusicTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGMusicTableViewCell.h; sourceTree = "<group>"; };
+		C7C6C22E1BAF93CA002F4E19 /* KGMusicTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGMusicTableViewCell.m; sourceTree = "<group>"; };
+		C7C6C2311BAFB301002F4E19 /* KGMusicMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGMusicMenu.h; sourceTree = "<group>"; };
+		C7C6C2321BAFB301002F4E19 /* KGMusicMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGMusicMenu.m; sourceTree = "<group>"; };
 		C7E3ABCC1BA7B1B700860734 /* KGKuGouPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KGKuGouPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7E3ABD01BA7B1B700860734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7E3ABD11BA7B1B700860734 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -158,6 +170,12 @@
 				C774CC771BABB2080041F909 /* KGPlayBar.xib */,
 				C774CC7C1BABB4DD0041F909 /* KGPlayBar.h */,
 				C774CC7D1BABB4DD0041F909 /* KGPlayBar.m */,
+				C7C6C22D1BAF93CA002F4E19 /* KGMusicTableViewCell.h */,
+				C7C6C22E1BAF93CA002F4E19 /* KGMusicTableViewCell.m */,
+				C7C6C2311BAFB301002F4E19 /* KGMusicMenu.h */,
+				C7C6C2321BAFB301002F4E19 /* KGMusicMenu.m */,
+				C78C75A01BB0E8900019C49A /* NEUButton.h */,
+				C78C75A11BB0E8900019C49A /* NEUButton.m */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -178,6 +196,35 @@
 				C78557281BAA634800F929AD /* KGMainPageMusicTableViewCell.m */,
 			);
 			name = MainPage;
+			sourceTree = "<group>";
+		};
+		C78C75A61BB0FEDA0019C49A /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				C78C75A31BB0FED20019C49A /* CoreDataMngTool.h */,
+				C78C75A41BB0FED20019C49A /* CoreDataMngTool.m */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		C78C75A71BB106850019C49A /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				C774CC821BABB7840041F909 /* UIView+Extension.h */,
+				C774CC831BABB7840041F909 /* UIView+Extension.m */,
+				C774CC7F1BABB7710041F909 /* NSString+MoreExtensions.h */,
+				C774CC801BABB7710041F909 /* NSString+MoreExtensions.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		C78C75A81BB106990019C49A /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				C7E3ABD31BA7B1B700860734 /* AppDelegate.h */,
+				C7E3ABD41BA7B1B700860734 /* AppDelegate.m */,
+			);
+			name = Delegate;
 			sourceTree = "<group>";
 		};
 		C7E3ABC31BA7B1B700860734 = {
@@ -276,12 +323,9 @@
 		C7E3ABFB1BA7B3D500860734 /* Others */ = {
 			isa = PBXGroup;
 			children = (
-				C7E3ABD31BA7B1B700860734 /* AppDelegate.h */,
-				C7E3ABD41BA7B1B700860734 /* AppDelegate.m */,
-				C774CC821BABB7840041F909 /* UIView+Extension.h */,
-				C774CC831BABB7840041F909 /* UIView+Extension.m */,
-				C774CC7F1BABB7710041F909 /* NSString+MoreExtensions.h */,
-				C774CC801BABB7710041F909 /* NSString+MoreExtensions.m */,
+				C78C75A81BB106990019C49A /* Delegate */,
+				C78C75A71BB106850019C49A /* Category */,
+				C78C75A61BB0FEDA0019C49A /* Tools */,
 			);
 			name = Others;
 			sourceTree = "<group>";
@@ -455,10 +499,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C774CC751BABA0110041F909 /* Music.m in Sources */,
+				C7C6C22F1BAF93CA002F4E19 /* KGMusicTableViewCell.m in Sources */,
 				C7E3ABD51BA7B1B700860734 /* AppDelegate.m in Sources */,
 				C78557211BAA61EE00F929AD /* KGMusicCellStatusModel.m in Sources */,
+				C78C75A21BB0E8900019C49A /* NEUButton.m in Sources */,
 				C774CC7E1BABB4DD0041F909 /* KGPlayBar.m in Sources */,
 				C7E3ABD21BA7B1B700860734 /* main.m in Sources */,
+				C7C6C2331BAFB301002F4E19 /* KGMusicMenu.m in Sources */,
 				C774CC711BAB9E550041F909 /* KGLocalMusicTableViewController.m in Sources */,
 				C774CC841BABB7840041F909 /* UIView+Extension.m in Sources */,
 				C7E3AC281BA7C6FD00860734 /* KGWelcomePageViewController.m in Sources */,
@@ -466,6 +513,7 @@
 				C78557291BAA634800F929AD /* KGMainPageMusicTableViewCell.m in Sources */,
 				C774CC811BABB7710041F909 /* NSString+MoreExtensions.m in Sources */,
 				C7E3ABD81BA7B1B700860734 /* KGKuGouPlayer.xcdatamodeld in Sources */,
+				C78C75A51BB0FED20019C49A /* CoreDataMngTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

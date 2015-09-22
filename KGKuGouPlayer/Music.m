@@ -15,6 +15,7 @@
 @dynamic index;
 @dynamic singer;
 @dynamic time;
+@dynamic cellStatus;
 
 +(instancetype)musicWithDict:(NSDictionary *)dict
 {
@@ -26,6 +27,8 @@
     music.index = [dict objectForKey:@"index"];
     music.singer = [dict objectForKey:@"singer"];
     music.time = [dict objectForKey:@"time"];
+    
+    music.cellStatus = YES;
     
     [delegate saveContext];
     
