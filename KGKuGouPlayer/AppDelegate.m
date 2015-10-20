@@ -20,19 +20,12 @@
     
     //搜索本地歌曲
     //1.去数据库coredata中查询所有歌曲，如果有，不需要全盘加载，如果coredata是空的，则进行全盘歌曲的搜索，并保存在coredata中
-    NSArray *musicList = [CoreDataMngTool serachMusics];
+    NSArray *musicList = [CoreDataMngTool searchMusics];
     if (musicList.count == 0||musicList == nil)
     {
-        musicList = [NSMutableArray array];
-        NSArray *dictList = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"LocolMusicList.plist" ofType:nil]];
-        for (int i = 0; i < dictList.count; i++)
-        {
-            NSDictionary *dict = dictList[i];
-            //创建歌曲模型，但是不需要它的返回值，直接保存在数据库coredata当中
-            [Music musicWithDict:dict];
-        }
+        [CoreDataMngTool loadAllMusicList];
     }
-    
+    [CoreDataMngTool sharedCoredataMngTool].curPlayList = musicList;
     //1.取得本app的版本号
     NSDictionary *infoDict = [NSBundle mainBundle].infoDictionary;
     NSString *newVersion = infoDict[@"CFBundleVersion"];
@@ -128,7 +121,10 @@
     NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"KGKuGouPlayer.sqlite"];
     NSError *error = nil;
     NSString *failureReason = @"There was an error creating or loading the application's saved data.";
-    if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error]) {
+    
+    NSDictionary *optionsDictionary = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithBool:YES],NSMigratePersistentStoresAutomaticallyOption, [NSNumber numberWithBool:YES],NSInferMappingModelAutomaticallyOption, nil];
+    
+    if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:optionsDictionary error:&error]) {
         // Report any error we got.
         NSMutableDictionary *dict = [NSMutableDictionary dictionary];
         dict[NSLocalizedDescriptionKey] = @"Failed to initialize the application's saved data";

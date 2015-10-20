@@ -9,18 +9,20 @@
 #import <UIKit/UIKit.h>
 #import "UIView+Extension.h"
 #import "Music.h"
+#import "KGPlayMusicViewController.h"
 
 @class KGPlayBar;
 @protocol KGPlayBarDelegate <NSObject>
 
 - (void)playBar:(KGPlayBar *)playBar didPlayPauseMusic:(BOOL)playMethod;
-- (void)playBarDidPlayPauseMusic:(KGPlayBar *)playBar ;
+- (void)playBarDidPlayPauseMusic:(KGPlayBar *)playBar;
+- (void)playBarDidPlayMusic;
 
 @end
 
 @interface KGPlayBar : UIView
 
-@property (weak, nonatomic) IBOutlet UIImageView *icon;
+@property (weak, nonatomic) IBOutlet UIButton *icon;
 @property (weak, nonatomic) IBOutlet UIProgressView *progress;
 @property (weak, nonatomic) IBOutlet UILabel *musicName;
 @property (weak, nonatomic) IBOutlet UILabel *singer;
@@ -34,5 +36,6 @@
 
 - (IBAction)playOrPauseMusic:(UIButton *)sender;
 - (IBAction)playNextMusic:(UIButton *)sender;
+- (IBAction)iconButton:(UIButton *)sender;
 
 @end

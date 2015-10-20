@@ -14,6 +14,7 @@
 {
     KGPlayBar *playBar = [[[NSBundle mainBundle] loadNibNamed:@"KGPlayBar" owner:nil options:nil]lastObject];
     playBar.frame = CGRectMake(0, [UIScreen mainScreen].bounds.size.height - 54.f, [UIScreen mainScreen].bounds.size.width, 54.f);
+    playBar.progress.progress = 0.0;
     return playBar;
 }
 
@@ -56,6 +57,15 @@
     if ([_delegate respondsToSelector:@selector(playBarDidPlayPauseMusic:)])
     {
         [_delegate playBarDidPlayPauseMusic:self];
+    }
+}
+
+#pragma mark 跳转到播放界面
+- (IBAction)iconButton:(UIButton *)sender
+{
+    if ([_delegate respondsToSelector:@selector(playBarDidPlayMusic)])
+    {
+        [_delegate playBarDidPlayMusic];
     }
 }
 @end

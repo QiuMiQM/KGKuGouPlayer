@@ -10,6 +10,4 @@
 
 @interface NEUButton : UIButton
 
-
-
 @end

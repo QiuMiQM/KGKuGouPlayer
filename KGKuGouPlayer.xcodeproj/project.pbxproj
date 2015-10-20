@@ -20,8 +20,20 @@
 		C785572F1BAA8F7800F929AD /* webMusicList.plist in Resources */ = {isa = PBXBuildFile; fileRef = C785572C1BAA8F7800F929AD /* webMusicList.plist */; };
 		C78C75A21BB0E8900019C49A /* NEUButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C78C75A11BB0E8900019C49A /* NEUButton.m */; };
 		C78C75A51BB0FED20019C49A /* CoreDataMngTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C78C75A41BB0FED20019C49A /* CoreDataMngTool.m */; };
+		C790651B1BD6303E0001DFBD /* MBProgressHUD+MoreExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C790651A1BD6303E0001DFBD /* MBProgressHUD+MoreExtension.m */; };
+		C790651F1BD639490001DFBD /* KGAccessToken.m in Sources */ = {isa = PBXBuildFile; fileRef = C790651E1BD639490001DFBD /* KGAccessToken.m */; };
+		C7991F271BBA315B009EEBA2 /* KGSaveListSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C7991F261BBA315B009EEBA2 /* KGSaveListSectionHeaderView.m */; };
+		C7A75E501BB8D86000B03A94 /* KGSaveListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7A75E4F1BB8D86000B03A94 /* KGSaveListTableViewController.m */; };
+		C7A75E541BB8DDF500B03A94 /* KGSaveListView.m in Sources */ = {isa = PBXBuildFile; fileRef = C7A75E531BB8DDF500B03A94 /* KGSaveListView.m */; };
+		C7B4B6FE1BB38EFA00FD9C48 /* KGMyLoveTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B4B6FD1BB38EFA00FD9C48 /* KGMyLoveTableViewController.m */; };
+		C7B4B7011BB3A42700FD9C48 /* KGPlayMusicBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7B4B7001BB3A42700FD9C48 /* KGPlayMusicBar.xib */; };
+		C7B4B7041BB3A43800FD9C48 /* KGPlayMusicBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B4B7031BB3A43800FD9C48 /* KGPlayMusicBar.m */; };
+		C7B4B7081BB3A7D300FD9C48 /* KGPlayMusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B4B7071BB3A7D300FD9C48 /* KGPlayMusicViewController.m */; };
+		C7C6C1281BBB70EF006E9181 /* KGLocalMusicSaveListView.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C6C1271BBB70EF006E9181 /* KGLocalMusicSaveListView.m */; };
+		C7C6C1321BBB84A4006E9181 /* SaveList.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C6C1311BBB84A4006E9181 /* SaveList.m */; };
 		C7C6C22F1BAF93CA002F4E19 /* KGMusicTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C6C22E1BAF93CA002F4E19 /* KGMusicTableViewCell.m */; };
 		C7C6C2331BAFB301002F4E19 /* KGMusicMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C6C2321BAFB301002F4E19 /* KGMusicMenu.m */; };
+		C7C9A63D1BB248C000F7E2EC /* AudioPlayerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C9A63C1BB248C000F7E2EC /* AudioPlayerTool.m */; };
 		C7E3ABD21BA7B1B700860734 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E3ABD11BA7B1B700860734 /* main.m */; };
 		C7E3ABD51BA7B1B700860734 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E3ABD41BA7B1B700860734 /* AppDelegate.m */; };
 		C7E3ABD81BA7B1B700860734 /* KGKuGouPlayer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C7E3ABD61BA7B1B700860734 /* KGKuGouPlayer.xcdatamodeld */; };
@@ -51,6 +63,8 @@
 		C7E3AC241BA7C54100860734 /* LocolMusicList.plist in Resources */ = {isa = PBXBuildFile; fileRef = C7E3AC231BA7C54100860734 /* LocolMusicList.plist */; };
 		C7E3AC281BA7C6FD00860734 /* KGWelcomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E3AC271BA7C6FD00860734 /* KGWelcomePageViewController.m */; };
 		C7E3AC611BA800EF00860734 /* KGMainPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E3AC601BA800EF00860734 /* KGMainPageViewController.m */; };
+		C7E8451E1BD4EBDE006779D5 /* KGDoubanLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E8451D1BD4EBDE006779D5 /* KGDoubanLoginViewController.m */; };
+		E598B6E0CC7CF429F9BD6DE5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D36B1E418BA8C4D23CAFAA2 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +78,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D36B1E418BA8C4D23CAFAA2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		963AAD41BDB33CA9DFBD22DF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C774CC6F1BAB9E550041F909 /* KGLocalMusicTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGLocalMusicTableViewController.h; sourceTree = "<group>"; };
 		C774CC701BAB9E550041F909 /* KGLocalMusicTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGLocalMusicTableViewController.m; sourceTree = "<group>"; };
 		C774CC731BABA0110041F909 /* Music.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Music.h; sourceTree = "<group>"; };
@@ -86,10 +102,35 @@
 		C78C75A11BB0E8900019C49A /* NEUButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEUButton.m; sourceTree = "<group>"; };
 		C78C75A31BB0FED20019C49A /* CoreDataMngTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataMngTool.h; sourceTree = "<group>"; };
 		C78C75A41BB0FED20019C49A /* CoreDataMngTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataMngTool.m; sourceTree = "<group>"; };
+		C79065191BD6303E0001DFBD /* MBProgressHUD+MoreExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MoreExtension.h"; sourceTree = "<group>"; };
+		C790651A1BD6303E0001DFBD /* MBProgressHUD+MoreExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MoreExtension.m"; sourceTree = "<group>"; };
+		C790651D1BD639490001DFBD /* KGAccessToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGAccessToken.h; sourceTree = "<group>"; };
+		C790651E1BD639490001DFBD /* KGAccessToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGAccessToken.m; sourceTree = "<group>"; };
+		C7991F251BBA315B009EEBA2 /* KGSaveListSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGSaveListSectionHeaderView.h; sourceTree = "<group>"; };
+		C7991F261BBA315B009EEBA2 /* KGSaveListSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGSaveListSectionHeaderView.m; sourceTree = "<group>"; };
+		C7A75E4E1BB8D86000B03A94 /* KGSaveListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGSaveListTableViewController.h; sourceTree = "<group>"; };
+		C7A75E4F1BB8D86000B03A94 /* KGSaveListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGSaveListTableViewController.m; sourceTree = "<group>"; };
+		C7A75E521BB8DDF500B03A94 /* KGSaveListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGSaveListView.h; sourceTree = "<group>"; };
+		C7A75E531BB8DDF500B03A94 /* KGSaveListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGSaveListView.m; sourceTree = "<group>"; };
+		C7B4B6FC1BB38EFA00FD9C48 /* KGMyLoveTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGMyLoveTableViewController.h; sourceTree = "<group>"; };
+		C7B4B6FD1BB38EFA00FD9C48 /* KGMyLoveTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGMyLoveTableViewController.m; sourceTree = "<group>"; };
+		C7B4B7001BB3A42700FD9C48 /* KGPlayMusicBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KGPlayMusicBar.xib; sourceTree = "<group>"; };
+		C7B4B7021BB3A43800FD9C48 /* KGPlayMusicBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGPlayMusicBar.h; sourceTree = "<group>"; };
+		C7B4B7031BB3A43800FD9C48 /* KGPlayMusicBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGPlayMusicBar.m; sourceTree = "<group>"; };
+		C7B4B7061BB3A7D300FD9C48 /* KGPlayMusicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGPlayMusicViewController.h; sourceTree = "<group>"; };
+		C7B4B7071BB3A7D300FD9C48 /* KGPlayMusicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGPlayMusicViewController.m; sourceTree = "<group>"; };
+		C7C6C1261BBB70EF006E9181 /* KGLocalMusicSaveListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGLocalMusicSaveListView.h; sourceTree = "<group>"; };
+		C7C6C1271BBB70EF006E9181 /* KGLocalMusicSaveListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGLocalMusicSaveListView.m; sourceTree = "<group>"; };
+		C7C6C1291BBB7ECA006E9181 /* KGKuGouPlayer 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "KGKuGouPlayer 2.xcdatamodel"; sourceTree = "<group>"; };
+		C7C6C1301BBB84A4006E9181 /* SaveList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveList.h; sourceTree = "<group>"; };
+		C7C6C1311BBB84A4006E9181 /* SaveList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveList.m; sourceTree = "<group>"; };
+		C7C6C1331BBB8FD1006E9181 /* KGKuGouPlayer 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "KGKuGouPlayer 3.xcdatamodel"; sourceTree = "<group>"; };
 		C7C6C22D1BAF93CA002F4E19 /* KGMusicTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGMusicTableViewCell.h; sourceTree = "<group>"; };
 		C7C6C22E1BAF93CA002F4E19 /* KGMusicTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGMusicTableViewCell.m; sourceTree = "<group>"; };
 		C7C6C2311BAFB301002F4E19 /* KGMusicMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGMusicMenu.h; sourceTree = "<group>"; };
 		C7C6C2321BAFB301002F4E19 /* KGMusicMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGMusicMenu.m; sourceTree = "<group>"; };
+		C7C9A63B1BB248C000F7E2EC /* AudioPlayerTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayerTool.h; sourceTree = "<group>"; };
+		C7C9A63C1BB248C000F7E2EC /* AudioPlayerTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlayerTool.m; sourceTree = "<group>"; };
 		C7E3ABCC1BA7B1B700860734 /* KGKuGouPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KGKuGouPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7E3ABD01BA7B1B700860734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7E3ABD11BA7B1B700860734 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -126,6 +167,9 @@
 		C7E3AC271BA7C6FD00860734 /* KGWelcomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWelcomePageViewController.m; sourceTree = "<group>"; };
 		C7E3AC5F1BA800EF00860734 /* KGMainPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGMainPageViewController.h; sourceTree = "<group>"; };
 		C7E3AC601BA800EF00860734 /* KGMainPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGMainPageViewController.m; sourceTree = "<group>"; };
+		C7E8451C1BD4EBDE006779D5 /* KGDoubanLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGDoubanLoginViewController.h; sourceTree = "<group>"; };
+		C7E8451D1BD4EBDE006779D5 /* KGDoubanLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGDoubanLoginViewController.m; sourceTree = "<group>"; };
+		EFA814C16722E86C13198476 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +177,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E598B6E0CC7CF429F9BD6DE5 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +191,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		352B35895C5342A9A1A18BD6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D36B1E418BA8C4D23CAFAA2 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5075C918946736279C3CF2B5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EFA814C16722E86C13198476 /* Pods.debug.xcconfig */,
+				963AAD41BDB33CA9DFBD22DF /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C774CC6E1BAB9E390041F909 /* LocalMusic */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +222,8 @@
 			children = (
 				C774CC731BABA0110041F909 /* Music.h */,
 				C774CC741BABA0110041F909 /* Music.m */,
+				C7C6C1301BBB84A4006E9181 /* SaveList.h */,
+				C7C6C1311BBB84A4006E9181 /* SaveList.m */,
 			);
 			name = LocalMusic;
 			sourceTree = "<group>";
@@ -203,6 +267,8 @@
 			children = (
 				C78C75A31BB0FED20019C49A /* CoreDataMngTool.h */,
 				C78C75A41BB0FED20019C49A /* CoreDataMngTool.m */,
+				C7C9A63B1BB248C000F7E2EC /* AudioPlayerTool.h */,
+				C7C9A63C1BB248C000F7E2EC /* AudioPlayerTool.m */,
 			);
 			name = Tools;
 			sourceTree = "<group>";
@@ -214,6 +280,8 @@
 				C774CC831BABB7840041F909 /* UIView+Extension.m */,
 				C774CC7F1BABB7710041F909 /* NSString+MoreExtensions.h */,
 				C774CC801BABB7710041F909 /* NSString+MoreExtensions.m */,
+				C79065191BD6303E0001DFBD /* MBProgressHUD+MoreExtension.h */,
+				C790651A1BD6303E0001DFBD /* MBProgressHUD+MoreExtension.m */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -227,12 +295,80 @@
 			name = Delegate;
 			sourceTree = "<group>";
 		};
+		C790651C1BD639270001DFBD /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C790651D1BD639490001DFBD /* KGAccessToken.h */,
+				C790651E1BD639490001DFBD /* KGAccessToken.m */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		C7A75E4D1BB8D84700B03A94 /* SaveList */ = {
+			isa = PBXGroup;
+			children = (
+				C7A75E4E1BB8D86000B03A94 /* KGSaveListTableViewController.h */,
+				C7A75E4F1BB8D86000B03A94 /* KGSaveListTableViewController.m */,
+			);
+			name = SaveList;
+			sourceTree = "<group>";
+		};
+		C7A75E511BB8DDCF00B03A94 /* SaveList */ = {
+			isa = PBXGroup;
+			children = (
+				C7A75E521BB8DDF500B03A94 /* KGSaveListView.h */,
+				C7A75E531BB8DDF500B03A94 /* KGSaveListView.m */,
+				C7991F251BBA315B009EEBA2 /* KGSaveListSectionHeaderView.h */,
+				C7991F261BBA315B009EEBA2 /* KGSaveListSectionHeaderView.m */,
+			);
+			name = SaveList;
+			sourceTree = "<group>";
+		};
+		C7B4B6FB1BB38ED100FD9C48 /* MyLove */ = {
+			isa = PBXGroup;
+			children = (
+				C7B4B6FC1BB38EFA00FD9C48 /* KGMyLoveTableViewController.h */,
+				C7B4B6FD1BB38EFA00FD9C48 /* KGMyLoveTableViewController.m */,
+			);
+			name = MyLove;
+			sourceTree = "<group>";
+		};
+		C7B4B6FF1BB3A40F00FD9C48 /* PlayMusic */ = {
+			isa = PBXGroup;
+			children = (
+				C7B4B7001BB3A42700FD9C48 /* KGPlayMusicBar.xib */,
+				C7B4B7021BB3A43800FD9C48 /* KGPlayMusicBar.h */,
+				C7B4B7031BB3A43800FD9C48 /* KGPlayMusicBar.m */,
+			);
+			name = PlayMusic;
+			sourceTree = "<group>";
+		};
+		C7B4B7051BB3A7BF00FD9C48 /* PlayMusic */ = {
+			isa = PBXGroup;
+			children = (
+				C7B4B7061BB3A7D300FD9C48 /* KGPlayMusicViewController.h */,
+				C7B4B7071BB3A7D300FD9C48 /* KGPlayMusicViewController.m */,
+			);
+			name = PlayMusic;
+			sourceTree = "<group>";
+		};
+		C7C6C1251BBB7098006E9181 /* LocalMusic */ = {
+			isa = PBXGroup;
+			children = (
+				C7C6C1261BBB70EF006E9181 /* KGLocalMusicSaveListView.h */,
+				C7C6C1271BBB70EF006E9181 /* KGLocalMusicSaveListView.m */,
+			);
+			name = LocalMusic;
+			sourceTree = "<group>";
+		};
 		C7E3ABC31BA7B1B700860734 = {
 			isa = PBXGroup;
 			children = (
 				C7E3ABCE1BA7B1B700860734 /* KGKuGouPlayer */,
 				C7E3ABEB1BA7B1B700860734 /* KGKuGouPlayerTests */,
 				C7E3ABCD1BA7B1B700860734 /* Products */,
+				5075C918946736279C3CF2B5 /* Pods */,
+				352B35895C5342A9A1A18BD6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -295,6 +431,7 @@
 		C7E3ABF81BA7B39400860734 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C790651C1BD639270001DFBD /* Common */,
 				C774CC721BAB9FF80041F909 /* LocalMusic */,
 				C78557221BAA62A800F929AD /* MainPage */,
 			);
@@ -304,6 +441,9 @@
 		C7E3ABF91BA7B3B100860734 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C7C6C1251BBB7098006E9181 /* LocalMusic */,
+				C7A75E511BB8DDCF00B03A94 /* SaveList */,
+				C7B4B6FF1BB3A40F00FD9C48 /* PlayMusic */,
 				C774CC761BABB1DF0041F909 /* Common */,
 				C78557231BAA62E600F929AD /* MainPage */,
 			);
@@ -313,6 +453,10 @@
 		C7E3ABFA1BA7B3B700860734 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C7E8451B1BD4EBA8006779D5 /* DouBanLogin */,
+				C7A75E4D1BB8D84700B03A94 /* SaveList */,
+				C7B4B7051BB3A7BF00FD9C48 /* PlayMusic */,
+				C7B4B6FB1BB38ED100FD9C48 /* MyLove */,
 				C774CC6E1BAB9E390041F909 /* LocalMusic */,
 				C7E3AC251BA7C6BA00860734 /* WelcomePage */,
 				C7E3AC5E1BA800C200860734 /* MainPage */,
@@ -374,6 +518,15 @@
 			name = MainPage;
 			sourceTree = "<group>";
 		};
+		C7E8451B1BD4EBA8006779D5 /* DouBanLogin */ = {
+			isa = PBXGroup;
+			children = (
+				C7E8451C1BD4EBDE006779D5 /* KGDoubanLoginViewController.h */,
+				C7E8451D1BD4EBDE006779D5 /* KGDoubanLoginViewController.m */,
+			);
+			name = DouBanLogin;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -381,9 +534,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7E3ABF21BA7B1B700860734 /* Build configuration list for PBXNativeTarget "KGKuGouPlayer" */;
 			buildPhases = (
+				2F298609635780282BA8F99C /* Check Pods Manifest.lock */,
 				C7E3ABC81BA7B1B700860734 /* Sources */,
 				C7E3ABC91BA7B1B700860734 /* Frameworks */,
 				C7E3ABCA1BA7B1B700860734 /* Resources */,
+				6128363E6DFDFCC865CD00DE /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -459,6 +614,7 @@
 				C7E3AC241BA7C54100860734 /* LocolMusicList.plist in Resources */,
 				C7E3AC101BA7C53B00860734 /* TFBOYS - Heart.mp3 in Resources */,
 				C7E3ABDE1BA7B1B700860734 /* Main.storyboard in Resources */,
+				C7B4B7011BB3A42700FD9C48 /* KGPlayMusicBar.xib in Resources */,
 				C7E3AC221BA7C53B00860734 /* 齐晨 - 咱们结婚吧.mp3 in Resources */,
 				C7E3AC161BA7C53B00860734 /* 张杰 - 剑心.mp3 in Resources */,
 				C7E3AC1A1BA7C53B00860734 /* 李易峰 - 剑伤.mp3 in Resources */,
@@ -493,6 +649,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2F298609635780282BA8F99C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6128363E6DFDFCC865CD00DE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C7E3ABC81BA7B1B700860734 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -501,14 +690,26 @@
 				C774CC751BABA0110041F909 /* Music.m in Sources */,
 				C7C6C22F1BAF93CA002F4E19 /* KGMusicTableViewCell.m in Sources */,
 				C7E3ABD51BA7B1B700860734 /* AppDelegate.m in Sources */,
+				C790651F1BD639490001DFBD /* KGAccessToken.m in Sources */,
 				C78557211BAA61EE00F929AD /* KGMusicCellStatusModel.m in Sources */,
 				C78C75A21BB0E8900019C49A /* NEUButton.m in Sources */,
+				C7C9A63D1BB248C000F7E2EC /* AudioPlayerTool.m in Sources */,
+				C790651B1BD6303E0001DFBD /* MBProgressHUD+MoreExtension.m in Sources */,
 				C774CC7E1BABB4DD0041F909 /* KGPlayBar.m in Sources */,
+				C7A75E541BB8DDF500B03A94 /* KGSaveListView.m in Sources */,
 				C7E3ABD21BA7B1B700860734 /* main.m in Sources */,
 				C7C6C2331BAFB301002F4E19 /* KGMusicMenu.m in Sources */,
+				C7B4B6FE1BB38EFA00FD9C48 /* KGMyLoveTableViewController.m in Sources */,
+				C7E8451E1BD4EBDE006779D5 /* KGDoubanLoginViewController.m in Sources */,
+				C7C6C1281BBB70EF006E9181 /* KGLocalMusicSaveListView.m in Sources */,
+				C7A75E501BB8D86000B03A94 /* KGSaveListTableViewController.m in Sources */,
 				C774CC711BAB9E550041F909 /* KGLocalMusicTableViewController.m in Sources */,
+				C7991F271BBA315B009EEBA2 /* KGSaveListSectionHeaderView.m in Sources */,
+				C7B4B7041BB3A43800FD9C48 /* KGPlayMusicBar.m in Sources */,
 				C774CC841BABB7840041F909 /* UIView+Extension.m in Sources */,
+				C7C6C1321BBB84A4006E9181 /* SaveList.m in Sources */,
 				C7E3AC281BA7C6FD00860734 /* KGWelcomePageViewController.m in Sources */,
+				C7B4B7081BB3A7D300FD9C48 /* KGPlayMusicViewController.m in Sources */,
 				C7E3AC611BA800EF00860734 /* KGMainPageViewController.m in Sources */,
 				C78557291BAA634800F929AD /* KGMainPageMusicTableViewCell.m in Sources */,
 				C774CC811BABB7710041F909 /* NSString+MoreExtensions.m in Sources */,
@@ -637,6 +838,7 @@
 		};
 		C7E3ABF31BA7B1B700860734 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFA814C16722E86C13198476 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KGKuGouPlayer/Info.plist;
@@ -647,6 +849,7 @@
 		};
 		C7E3ABF41BA7B1B700860734 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 963AAD41BDB33CA9DFBD22DF /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KGKuGouPlayer/Info.plist;
@@ -725,9 +928,11 @@
 		C7E3ABD61BA7B1B700860734 /* KGKuGouPlayer.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				C7C6C1331BBB8FD1006E9181 /* KGKuGouPlayer 3.xcdatamodel */,
+				C7C6C1291BBB7ECA006E9181 /* KGKuGouPlayer 2.xcdatamodel */,
 				C7E3ABD71BA7B1B700860734 /* KGKuGouPlayer.xcdatamodel */,
 			);
-			currentVersion = C7E3ABD71BA7B1B700860734 /* KGKuGouPlayer.xcdatamodel */;
+			currentVersion = C7C6C1331BBB8FD1006E9181 /* KGKuGouPlayer 3.xcdatamodel */;
 			path = KGKuGouPlayer.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

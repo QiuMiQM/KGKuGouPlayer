@@ -11,9 +11,10 @@
     </entity>
     <entity name="SaveList" representedClassName="SaveList" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="musics" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Music" syncable="YES"/>
     </entity>
     <elements>
         <element name="Music" positionX="-63" positionY="-18" width="128" height="150"/>
-        <element name="SaveList" positionX="-63" positionY="36" width="128" height="60"/>
+        <element name="SaveList" positionX="-63" positionY="36" width="128" height="75"/>
     </elements>
 </model>

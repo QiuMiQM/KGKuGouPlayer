@@ -13,7 +13,7 @@ typedef enum
 {
     eMyMusic = 0,
     eNetMusic,
-    eMoerFunction
+    eMoreFunction
 }eMusicSelect;
 
 @interface KGMainPageViewController ()
@@ -35,6 +35,13 @@ typedef enum
     self.tableView.backgroundColor = [UIColor clearColor];
     self.tableView.tableFooterView = [[UIView alloc]initWithFrame:CGRectZero];
     KGPlayBar *playBar = [KGPlayBar playBar];
+    /*
+     
+     
+     ----------------- 代理连线 -----------------
+     
+     
+     */
     AppDelegate *delegate = [UIApplication sharedApplication].delegate;
     [delegate.window addSubview:playBar];
     //view刚加载完毕，window为空，无法添加
@@ -77,7 +84,7 @@ typedef enum
                 fileName = @"webMusicList.plist";
             }
                 break;
-            case eMoerFunction:
+            case eMoreFunction:
             {
                 fileName = @"MoreList.plist";
             }
@@ -101,6 +108,11 @@ typedef enum
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
+}
+
+-(void)playBarDidSeguePlayMusic
+{
+    [self performSegueWithIdentifier:@"localMusicToPlayMusic" sender:nil];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -156,8 +168,40 @@ typedef enum
     _curselectRow = indexPath.row;
     
     [self.tableView reloadData];
-    
-    [self performSegueWithIdentifier:@"toLocalMusic" sender:nil];
+    switch (_musicSelect)
+    {
+        case eMyMusic:
+        {
+            switch (_curselectRow) {
+                case 0:
+                {
+                    [self performSegueWithIdentifier:@"toLocalMusic" sender:nil];
+                }
+                    break;
+                case 1:
+                {
+                    [self performSegueWithIdentifier:@"toMyLove" sender:nil];
+                }
+                    break;
+                case 2:
+                {
+                    [self performSegueWithIdentifier:@"toSaveList" sender:nil];
+                }
+                    break;
+                default:
+                    break;
+            }
+            break;
+        }
+        case eNetMusic:
+        {
+        }
+        case eMoreFunction:
+        {
+        }
+        default:
+            break;
+    }
 }
 
 //-(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -170,7 +214,7 @@ typedef enum
 #pragma mark 登录
 - (IBAction)login:(UIButton *)sender
 {
-    
+    [self performSegueWithIdentifier:@"toLogin" sender:nil];
 }
 
 #pragma mark 注册
@@ -220,7 +264,7 @@ typedef enum
     _myMusic.selected = NO;
     _netMusic.selected = NO;
     
-    _musicSelect = eMoerFunction;
+    _musicSelect = eMoreFunction;
     _cellStatus = nil;
     _curselectRow = -1;
     _arrow.center = CGPointMake(_arrow.center.x, sender.center.y);

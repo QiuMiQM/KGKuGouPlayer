@@ -16,6 +16,8 @@
 @property (nonatomic, retain) NSString * singer;
 @property (nonatomic, retain) NSString * time;
 @property (nonatomic, assign) BOOL cellStatus;
+@property (nonatomic, assign) BOOL isPlay;
+@property (nonatomic, assign) BOOL isMyLove;
 
 +(instancetype)musicWithDict:(NSDictionary *)dict;
 

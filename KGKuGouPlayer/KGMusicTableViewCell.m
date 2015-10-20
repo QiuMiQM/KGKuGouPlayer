@@ -63,9 +63,7 @@
                            @{@"title":@"添加",
                              @"image":@"addPlayList"},
                            @{@"title":@"分享",
-                             @"image":@"share"},
-                           @{@"title":@"歌曲信息"},
-                           @{@"title":@"K歌"}];
+                             @"image":@"share"}];
         KGMusicMenu *menu = [KGMusicMenu musicMenuWithInfos:infos];
         menu.delegate = self;
         _background = menu;
@@ -91,7 +89,7 @@
     return self;
 }
 
-#pragma mark 模型的set方法
+#pragma mark 模型的setter方法
 - (void)setMusic:(Music *)music
 {
     _music = music;
@@ -105,6 +103,14 @@
         self.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 44.f+65.f);
     }
     _background.hidden = music.cellStatus;
+    if (music.isPlay)
+    {
+        _musicName.textColor = [UIColor orangeColor];
+    }
+    else
+    {
+        _musicName.textColor = [UIColor blackColor];
+    }
 }
 
 #pragma mark 设置子控件的位置

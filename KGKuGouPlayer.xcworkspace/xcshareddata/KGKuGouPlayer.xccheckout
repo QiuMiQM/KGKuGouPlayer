@@ -5,7 +5,7 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>5BC24123-3101-49D0-B004-C331A44B6171</string>
+	<string>89C37DB2-FE1F-4930-AD91-E7386F2BB883</string>
 	<key>IDESourceControlProjectName</key>
 	<string>KGKuGouPlayer</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -14,11 +14,11 @@
 		<string>https://github.com/QiuMiQM/KGKuGouPlayer.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>KGKuGouPlayer.xcodeproj</string>
+	<string>KGKuGouPlayer.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>ACC9F21ED1F9F6EEBDEA82A36BF63AD8CBCBAB0F</key>
-		<string>../..</string>
+		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/QiuMiQM/KGKuGouPlayer.git</string>

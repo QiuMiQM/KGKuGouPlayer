@@ -11,8 +11,9 @@
 #import "KGMainPageMusicTableViewCell.h"
 #import "KGPlayBar.h"
 #import "AppDelegate.h"
+#import "AudioPlayerTool.h"
 
-@interface KGMainPageViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+@interface KGMainPageViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,AudioPlayerToolDelegate>
 
 @property (weak, nonatomic) IBOutlet UIButton *icon;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;

@@ -21,9 +21,9 @@
 -(CGRect)titleRectForContentRect:(CGRect)contentRect
 {
     CGRect titleRect = [super titleRectForContentRect:contentRect];
-    CGFloat newRectX = (CGRectGetWidth(contentRect)-CGRectGetWidth(titleRect))*0.37;
+    CGFloat newRectX = (CGRectGetWidth(contentRect)-CGRectGetWidth(titleRect))*0.5;
     CGFloat newRectY = (CGRectGetHeight(contentRect)-35.f-CGRectGetHeight(titleRect))*0.5+35.f;
-    CGRect newRect = CGRectMake(newRectX, newRectY, CGRectGetWidth(titleRect)+15.f, CGRectGetHeight(titleRect));
+    CGRect newRect = CGRectMake(newRectX, newRectY, CGRectGetWidth(titleRect), CGRectGetHeight(titleRect));
     return newRect;
 }
 
