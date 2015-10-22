@@ -59,6 +59,12 @@
     KGPlayBar *playBar = [KGPlayBar playBar];
     playBar.progress.progress = 0.0;
     
+    //从沙盒中取得access_token，保存到工具类中
+    NSString *access_token = [[NSUserDefaults standardUserDefaults]objectForKey:@"access_token"];
+    KGAccessToken *token = [[KGAccessToken alloc]init];
+    token.access_token = access_token;
+    [CurUserMngTool sharedCurUserMngTool].token = token;
+    
     //清理沙盒中的数据
     NSLog(@"%@",[self applicationDocumentsDirectory]);
     return YES;

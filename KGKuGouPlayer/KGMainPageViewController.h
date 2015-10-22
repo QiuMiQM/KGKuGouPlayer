@@ -12,6 +12,12 @@
 #import "KGPlayBar.h"
 #import "AppDelegate.h"
 #import "AudioPlayerTool.h"
+#import "CurUserMngTool.h"
+#import <AFNetworking.h>
+#import "KGLoginUser.h"
+//离线状态下也有图片
+#import <UIButton+WebCache.h>
+#import "MBProgressHUD+MoreExtension.h"
 
 @interface KGMainPageViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,AudioPlayerToolDelegate>
 

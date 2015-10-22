@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "MBProgressHUD+MoreExtension.h"
 #import "KGAccessToken.h"
+#import "CurUserMngTool.h"
 
 @interface KGDoubanLoginViewController : UIViewController<UIWebViewDelegate>
 

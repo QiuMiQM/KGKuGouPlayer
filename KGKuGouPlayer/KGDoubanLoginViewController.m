@@ -89,6 +89,11 @@
         {
             //一般服务器返回的如果是JSON格式，AFNetworking会自动将JSON转变为字典responseObject返回给用户
             KGAccessToken *token = [KGAccessToken accessTokenWithDict:responseObject];
+            [CurUserMngTool sharedCurUserMngTool].token = token;
+            
+            //把access_token存入沙盒
+            [[NSUserDefaults standardUserDefaults]setObject:[CurUserMngTool sharedCurUserMngTool].token.access_token forKey:@"access_token"];
+            
             NSLog(@"JSON: %@", responseObject);
             NSLog(@"access_token %@ user %@",token.access_token,token.douban_user_name);
             
@@ -99,6 +104,9 @@
 //            hud.labelText = @"Success!";
 //            [hud hide:YES afterDelay:2.f];
             [MBProgressHUD showTipToWindow:@"Success!" afterDelay:2.f];
+            //自动返回到主页
+            [self.navigationController popViewControllerAnimated:YES];
+            [CurUserMngTool sharedCurUserMngTool].isChangeUser = YES;
         }
         failure:^(AFHTTPRequestOperation *operation, NSError *error)
         {

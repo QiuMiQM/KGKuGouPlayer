@@ -34,6 +34,12 @@
 		C7C6C22F1BAF93CA002F4E19 /* KGMusicTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C6C22E1BAF93CA002F4E19 /* KGMusicTableViewCell.m */; };
 		C7C6C2331BAFB301002F4E19 /* KGMusicMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C6C2321BAFB301002F4E19 /* KGMusicMenu.m */; };
 		C7C9A63D1BB248C000F7E2EC /* AudioPlayerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C9A63C1BB248C000F7E2EC /* AudioPlayerTool.m */; };
+		C7CCB0091BD72329005145DC /* CurUserMngTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CCB0081BD72329005145DC /* CurUserMngTool.m */; };
+		C7CCB00C1BD73448005145DC /* KGLoginUser.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CCB00B1BD73448005145DC /* KGLoginUser.m */; };
+		C7CCB0131BD74582005145DC /* KGMePageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CCB0121BD74582005145DC /* KGMePageTableViewController.m */; };
+		C7CCB0171BD77F34005145DC /* KGSingerPageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CCB0161BD77F34005145DC /* KGSingerPageTableViewController.m */; };
+		C7CCB01B1BD78349005145DC /* KGMusicsPageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CCB01A1BD78349005145DC /* KGMusicsPageTableViewController.m */; };
+		C7CCB01F1BD78A18005145DC /* KGAlbums.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CCB01E1BD78A18005145DC /* KGAlbums.m */; };
 		C7E3ABD21BA7B1B700860734 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E3ABD11BA7B1B700860734 /* main.m */; };
 		C7E3ABD51BA7B1B700860734 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E3ABD41BA7B1B700860734 /* AppDelegate.m */; };
 		C7E3ABD81BA7B1B700860734 /* KGKuGouPlayer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C7E3ABD61BA7B1B700860734 /* KGKuGouPlayer.xcdatamodeld */; };
@@ -131,6 +137,18 @@
 		C7C6C2321BAFB301002F4E19 /* KGMusicMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGMusicMenu.m; sourceTree = "<group>"; };
 		C7C9A63B1BB248C000F7E2EC /* AudioPlayerTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayerTool.h; sourceTree = "<group>"; };
 		C7C9A63C1BB248C000F7E2EC /* AudioPlayerTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlayerTool.m; sourceTree = "<group>"; };
+		C7CCB0071BD72329005145DC /* CurUserMngTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurUserMngTool.h; sourceTree = "<group>"; };
+		C7CCB0081BD72329005145DC /* CurUserMngTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurUserMngTool.m; sourceTree = "<group>"; };
+		C7CCB00A1BD73448005145DC /* KGLoginUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGLoginUser.h; sourceTree = "<group>"; };
+		C7CCB00B1BD73448005145DC /* KGLoginUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGLoginUser.m; sourceTree = "<group>"; };
+		C7CCB0111BD74582005145DC /* KGMePageTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGMePageTableViewController.h; sourceTree = "<group>"; };
+		C7CCB0121BD74582005145DC /* KGMePageTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGMePageTableViewController.m; sourceTree = "<group>"; };
+		C7CCB0151BD77F34005145DC /* KGSingerPageTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGSingerPageTableViewController.h; sourceTree = "<group>"; };
+		C7CCB0161BD77F34005145DC /* KGSingerPageTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGSingerPageTableViewController.m; sourceTree = "<group>"; };
+		C7CCB0191BD78349005145DC /* KGMusicsPageTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGMusicsPageTableViewController.h; sourceTree = "<group>"; };
+		C7CCB01A1BD78349005145DC /* KGMusicsPageTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGMusicsPageTableViewController.m; sourceTree = "<group>"; };
+		C7CCB01D1BD78A18005145DC /* KGAlbums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGAlbums.h; sourceTree = "<group>"; };
+		C7CCB01E1BD78A18005145DC /* KGAlbums.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGAlbums.m; sourceTree = "<group>"; };
 		C7E3ABCC1BA7B1B700860734 /* KGKuGouPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KGKuGouPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7E3ABD01BA7B1B700860734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7E3ABD11BA7B1B700860734 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -269,6 +287,8 @@
 				C78C75A41BB0FED20019C49A /* CoreDataMngTool.m */,
 				C7C9A63B1BB248C000F7E2EC /* AudioPlayerTool.h */,
 				C7C9A63C1BB248C000F7E2EC /* AudioPlayerTool.m */,
+				C7CCB0071BD72329005145DC /* CurUserMngTool.h */,
+				C7CCB0081BD72329005145DC /* CurUserMngTool.m */,
 			);
 			name = Tools;
 			sourceTree = "<group>";
@@ -300,17 +320,19 @@
 			children = (
 				C790651D1BD639490001DFBD /* KGAccessToken.h */,
 				C790651E1BD639490001DFBD /* KGAccessToken.m */,
+				C7CCB00A1BD73448005145DC /* KGLoginUser.h */,
+				C7CCB00B1BD73448005145DC /* KGLoginUser.m */,
 			);
 			name = Common;
 			sourceTree = "<group>";
 		};
-		C7A75E4D1BB8D84700B03A94 /* SaveList */ = {
+		C7A75E4D1BB8D84700B03A94 /* SavePage */ = {
 			isa = PBXGroup;
 			children = (
 				C7A75E4E1BB8D86000B03A94 /* KGSaveListTableViewController.h */,
 				C7A75E4F1BB8D86000B03A94 /* KGSaveListTableViewController.m */,
 			);
-			name = SaveList;
+			name = SavePage;
 			sourceTree = "<group>";
 		};
 		C7A75E511BB8DDCF00B03A94 /* SaveList */ = {
@@ -359,6 +381,42 @@
 				C7C6C1271BBB70EF006E9181 /* KGLocalMusicSaveListView.m */,
 			);
 			name = LocalMusic;
+			sourceTree = "<group>";
+		};
+		C7CCB00D1BD74359005145DC /* MinePage */ = {
+			isa = PBXGroup;
+			children = (
+				C7CCB0111BD74582005145DC /* KGMePageTableViewController.h */,
+				C7CCB0121BD74582005145DC /* KGMePageTableViewController.m */,
+			);
+			name = MinePage;
+			sourceTree = "<group>";
+		};
+		C7CCB0141BD77F0F005145DC /* SingerPage */ = {
+			isa = PBXGroup;
+			children = (
+				C7CCB0151BD77F34005145DC /* KGSingerPageTableViewController.h */,
+				C7CCB0161BD77F34005145DC /* KGSingerPageTableViewController.m */,
+			);
+			name = SingerPage;
+			sourceTree = "<group>";
+		};
+		C7CCB0181BD78335005145DC /* AlbumPage */ = {
+			isa = PBXGroup;
+			children = (
+				C7CCB0191BD78349005145DC /* KGMusicsPageTableViewController.h */,
+				C7CCB01A1BD78349005145DC /* KGMusicsPageTableViewController.m */,
+			);
+			name = AlbumPage;
+			sourceTree = "<group>";
+		};
+		C7CCB01C1BD789F7005145DC /* Album */ = {
+			isa = PBXGroup;
+			children = (
+				C7CCB01D1BD78A18005145DC /* KGAlbums.h */,
+				C7CCB01E1BD78A18005145DC /* KGAlbums.m */,
+			);
+			name = Album;
 			sourceTree = "<group>";
 		};
 		C7E3ABC31BA7B1B700860734 = {
@@ -431,9 +489,10 @@
 		C7E3ABF81BA7B39400860734 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				C790651C1BD639270001DFBD /* Common */,
-				C774CC721BAB9FF80041F909 /* LocalMusic */,
 				C78557221BAA62A800F929AD /* MainPage */,
+				C774CC721BAB9FF80041F909 /* LocalMusic */,
+				C7CCB01C1BD789F7005145DC /* Album */,
+				C790651C1BD639270001DFBD /* Common */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -441,11 +500,11 @@
 		C7E3ABF91BA7B3B100860734 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C78557231BAA62E600F929AD /* MainPage */,
 				C7C6C1251BBB7098006E9181 /* LocalMusic */,
 				C7A75E511BB8DDCF00B03A94 /* SaveList */,
 				C7B4B6FF1BB3A40F00FD9C48 /* PlayMusic */,
 				C774CC761BABB1DF0041F909 /* Common */,
-				C78557231BAA62E600F929AD /* MainPage */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -453,13 +512,16 @@
 		C7E3ABFA1BA7B3B700860734 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C7E8451B1BD4EBA8006779D5 /* DouBanLogin */,
-				C7A75E4D1BB8D84700B03A94 /* SaveList */,
-				C7B4B7051BB3A7BF00FD9C48 /* PlayMusic */,
-				C7B4B6FB1BB38ED100FD9C48 /* MyLove */,
-				C774CC6E1BAB9E390041F909 /* LocalMusic */,
 				C7E3AC251BA7C6BA00860734 /* WelcomePage */,
 				C7E3AC5E1BA800C200860734 /* MainPage */,
+				C774CC6E1BAB9E390041F909 /* LocalMusic */,
+				C7B4B6FB1BB38ED100FD9C48 /* MyLove */,
+				C7A75E4D1BB8D84700B03A94 /* SavePage */,
+				C7B4B7051BB3A7BF00FD9C48 /* PlayMusic */,
+				C7E8451B1BD4EBA8006779D5 /* DoubanLogin */,
+				C7CCB00D1BD74359005145DC /* MinePage */,
+				C7CCB0141BD77F0F005145DC /* SingerPage */,
+				C7CCB0181BD78335005145DC /* AlbumPage */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -518,13 +580,13 @@
 			name = MainPage;
 			sourceTree = "<group>";
 		};
-		C7E8451B1BD4EBA8006779D5 /* DouBanLogin */ = {
+		C7E8451B1BD4EBA8006779D5 /* DoubanLogin */ = {
 			isa = PBXGroup;
 			children = (
 				C7E8451C1BD4EBDE006779D5 /* KGDoubanLoginViewController.h */,
 				C7E8451D1BD4EBDE006779D5 /* KGDoubanLoginViewController.m */,
 			);
-			name = DouBanLogin;
+			name = DoubanLogin;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -689,6 +751,8 @@
 			files = (
 				C774CC751BABA0110041F909 /* Music.m in Sources */,
 				C7C6C22F1BAF93CA002F4E19 /* KGMusicTableViewCell.m in Sources */,
+				C7CCB0091BD72329005145DC /* CurUserMngTool.m in Sources */,
+				C7CCB01F1BD78A18005145DC /* KGAlbums.m in Sources */,
 				C7E3ABD51BA7B1B700860734 /* AppDelegate.m in Sources */,
 				C790651F1BD639490001DFBD /* KGAccessToken.m in Sources */,
 				C78557211BAA61EE00F929AD /* KGMusicCellStatusModel.m in Sources */,
@@ -696,10 +760,12 @@
 				C7C9A63D1BB248C000F7E2EC /* AudioPlayerTool.m in Sources */,
 				C790651B1BD6303E0001DFBD /* MBProgressHUD+MoreExtension.m in Sources */,
 				C774CC7E1BABB4DD0041F909 /* KGPlayBar.m in Sources */,
+				C7CCB01B1BD78349005145DC /* KGMusicsPageTableViewController.m in Sources */,
 				C7A75E541BB8DDF500B03A94 /* KGSaveListView.m in Sources */,
 				C7E3ABD21BA7B1B700860734 /* main.m in Sources */,
 				C7C6C2331BAFB301002F4E19 /* KGMusicMenu.m in Sources */,
 				C7B4B6FE1BB38EFA00FD9C48 /* KGMyLoveTableViewController.m in Sources */,
+				C7CCB0171BD77F34005145DC /* KGSingerPageTableViewController.m in Sources */,
 				C7E8451E1BD4EBDE006779D5 /* KGDoubanLoginViewController.m in Sources */,
 				C7C6C1281BBB70EF006E9181 /* KGLocalMusicSaveListView.m in Sources */,
 				C7A75E501BB8D86000B03A94 /* KGSaveListTableViewController.m in Sources */,
@@ -708,7 +774,9 @@
 				C7B4B7041BB3A43800FD9C48 /* KGPlayMusicBar.m in Sources */,
 				C774CC841BABB7840041F909 /* UIView+Extension.m in Sources */,
 				C7C6C1321BBB84A4006E9181 /* SaveList.m in Sources */,
+				C7CCB00C1BD73448005145DC /* KGLoginUser.m in Sources */,
 				C7E3AC281BA7C6FD00860734 /* KGWelcomePageViewController.m in Sources */,
+				C7CCB0131BD74582005145DC /* KGMePageTableViewController.m in Sources */,
 				C7B4B7081BB3A7D300FD9C48 /* KGPlayMusicViewController.m in Sources */,
 				C7E3AC611BA800EF00860734 /* KGMainPageViewController.m in Sources */,
 				C78557291BAA634800F929AD /* KGMainPageMusicTableViewCell.m in Sources */,
